@@ -1,0 +1,96 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.svg";
+import pic4 from "../assets/images/pic4.png";
+import header from "../assets/images/header.png";
+import Naesteknap from "../components/NaesteKnap.astro";
+import About from "./About.astro";
+---
+
+<section>
+  <section class="body">
+    <div>
+      <a href="/"><Image class="logo" src={logo} alt="logo" /></a>
+    </div>
+  </section>
+
+  <section class="container1"></section>
+  <section class="overskrift">
+    <h1>MULTIMEDIA DESIGNER</h1>
+    <div class="knap">
+      <a href="/projekter"><Naesteknap text="PROCED TO CHECK OUT" /></a>
+    </div>
+  </section>
+</section>
+<section>
+  <About />
+</section>
+
+<style>
+  @font-face {
+    font-family: fahkwangRegular;
+    src: url("/fonts/Fahkwang-Regular.ttf");
+  }
+  @font-face {
+    font-family: PlayfairdisplayBold;
+    src: url("/fonts/PlayfairDisplay-Bold.ttf");
+  }
+  @font-face {
+    font-family: PlayfairdisplayRegular;
+    src: url("/fonts/PlayfairDisplay-Regular.ttf");
+  }
+  @font-face {
+    font-family: ZapfHumanist;
+    src: url("/fonts/ZapfHumanist601Regular.ttf");
+  }
+  @font-face {
+    font-family: fahkwangMedium;
+    src: url("/fonts/Fahkwang-Medium.ttf");
+  }
+  @media (min-width: 1025px) {
+    .body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .container1 {
+      background-image: url("../assets/images/pic.png");
+      width: 70%;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      margin-left: 15%;
+      margin-top: -5%;
+    }
+
+    h1 {
+      font-family: ZapfHumanist;
+      font-size: 50px;
+      display: flex;
+      justify-content: center; /* Flytter knappen helt til højre */
+      align-items: center; /* Centrerer knappen lodret */
+    }
+
+    .logo {
+      width: 250px;
+      height: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .knap {
+      display: flex;
+      justify-content: center; /* Flytter knappen helt til højre */
+      align-items: center; /* Centrerer knappen lodret */
+      margin-top: 20px; /* Justerer afstanden fra toppen */
+    }
+
+    .knap a {
+      display: block; /* Sørger for, at knappen respekterer forældreelementets bredde */
+      max-width: 200px; /* Angiver en maksimal bredde for knappen */
+    }
+  }
+</style>

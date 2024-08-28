@@ -1,0 +1,55 @@
+<section>
+  <div>
+    <p>PROJECTS</p>
+  </div>
+  <div class="line"></div>
+</section>
+
+<style>
+  @font-face {
+    font-family: SackersGothic;
+    src: url("/fonts/SackersGothicStdLight.ttf");
+  }
+
+  @media (min-width: 1025px) {
+    .line {
+      border-bottom: 2px solid black;
+      width: 100%;
+    }
+
+    p {
+      font-family: SackersGothic;
+      font-size: 20px;
+    }
+
+    section:hover p {
+      color: #a2a2a2; /* Skift tekstfarven til grå ved hover */
+    }
+
+    section:hover .line {
+      border-color: #a2a2a2; /* Skift linjens farve til grå ved hover */
+    }
+  }
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .line {
+      border-bottom: 2px solid black;
+      width: 45%;
+    }
+
+    p {
+      font-family: SackersGothic;
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 599px) {
+    .line {
+      border-bottom: 2px solid black;
+      width: 60%;
+    }
+
+    p {
+      font-family: SackersGothic;
+      font-size: 20px;
+    }
+  }
+</style>

@@ -1,0 +1,84 @@
+---
+import { Image } from "astro:assets";
+import pic1 from "../assets/images/vietnam.png";
+import Collage from "./Collage.astro";
+---
+
+<section>
+  <h1>ABOUT ME</h1>
+</section>
+<section class="flex">
+  <div>
+    <p>
+      At 27 years old, I am a passionate and creative individual with a
+      background in multimedia design. I firmly believe in the motto, "See good
+      in all things," which guides my approach to life and work.<br />
+      <br /> Originally from Copenhagen, I recently relocated to Horsens, where my
+      partner and I have settled into our new home. We share our space with Mocca,
+      our delightful Bernese Mountain Dog, who has quickly become a beloved member
+      of the family. <br />
+      <br />In my free time, I find joy in simple pleasures like reading,
+      photography, and long walks. These activities not only help me unwind but
+      also fuel my creativity and allow me to see the world from different
+      perspectives. I also cherish moments spent with family and friends, as
+      they are an essential part of my life. <br />
+      <br /> My journey from Copenhagen to Horsens represents more than just a change
+      of scenery; it's a new chapter filled with opportunities to grow personally
+      and professionally while embracing all the beauty life has to offer.
+    </p>
+  </div>
+  <div>
+    <Collage />
+  </div>
+</section>
+
+<style>
+  @font-face {
+    font-family: fahkwangRegular;
+    src: url("/fonts/Fahkwang-Regular.ttf");
+  }
+  @font-face {
+    font-family: PlayfairdisplayBold;
+    src: url("/fonts/PlayfairDisplay-Bold.ttf");
+  }
+  @font-face {
+    font-family: PlayfairdisplayRegular;
+    src: url("/fonts/PlayfairDisplay-Regular.ttf");
+  }
+  @font-face {
+    font-family: ZapfHumanist;
+    src: url("/fonts/ZapfHumanist601Regular.ttf");
+  }
+  @font-face {
+    font-family: fahkwangMedium;
+    src: url("/fonts/Fahkwang-Medium.ttf");
+  }
+  @media (min-width: 1025px) {
+    h1 {
+      font-family: PlayfairdisplayRegular;
+      font-size: 30px;
+      margin-top: 100px;
+      margin-left: 70px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: PlayfairdisplayRegular;
+      font-size: 20px;
+    }
+    .flex {
+      display: flex;
+    }
+    p {
+      width: 430px;
+      line-height: 20px;
+      margin-left: 70px;
+    }
+    .pic1 {
+      width: 500px;
+      height: auto;
+      display: flex;
+      justify-content: flex-end; /* Flytter knappen helt til højre */
+      align-items: center; /* Centrerer knappen lodret */
+    }
+  }
+</style>

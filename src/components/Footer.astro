@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+import insta from "../assets/images/insta.svg";
+import facebook from "../assets/images/facebook.svg";
+import linkedin from "../assets/images/linkedin.svg";
+import phone from "../assets/images/phone.jpg";
+---
+
+<section class="baggrund">
+  <section>
+    <div>
+      <h1>SOCIAL MEDIA IS KINDA MY THING</h1>
+    </div>
+  </section>
+
+  <section class="flex">
+    <div>
+      <Image class="pic" src={insta} alt="pic" />
+    </div>
+    <div>
+      <Image class="pic" src={facebook} alt="pic" />
+    </div>
+    <div>
+      <Image class="pic" src={linkedin} alt="pic" />
+    </div>
+  </section>
+</section>
+<style>
+  @font-face {
+    font-family: fahkwangRegular;
+    src: url("/fonts/Fahkwang-Regular.ttf");
+  }
+  @font-face {
+    font-family: PlayfairdisplayBold;
+    src: url("/fonts/PlayfairDisplay-Bold.ttf");
+  }
+  @font-face {
+    font-family: PlayfairdisplayRegular;
+    src: url("/fonts/PlayfairDisplay-Regular.ttf");
+  }
+  @font-face {
+    font-family: ZapfHumanist;
+    src: url("/fonts/ZapfHumanist601Regular.ttf");
+  }
+  @font-face {
+    font-family: fahkwangMedium;
+    src: url("/fonts/Fahkwang-Medium.ttf");
+  }
+  @media (min-width: 1025px) {
+    h1 {
+      font-family: ZapfHumanist;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      margin-top: 30px;
+    }
+
+    .pic {
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+    }
+    .pic2 {
+      width: 400px;
+      height: auto;
+    }
+  }
+</style>
