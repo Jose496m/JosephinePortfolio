@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+import vietnam from "../assets/images/vietnam.png";
+import vietnam2 from "../assets/images/vietnam2.png";
+import vietnam3 from "../assets/images/Vietnam3.png";
+import foto1 from "../assets/images/foto1.png";
+import foto2 from "../assets/images/foto2.png";
+---
+
+<section class="collage">
+  <div class="pic-container pic1">
+    <Image class="pic" src={foto1} alt="pic1" />
+  </div>
+  <div class="pic-container pic2">
+    <Image class="pic" src={foto2} alt="pic2" />
+  </div>
+  <div class="pic-container pic3">
+    <Image class="pic" src={vietnam3} alt="pic3" />
+  </div>
+</section>
+
+<style>
+  .collage {
+    position: relative;
+    width: 60%; /* Bredden af collage-området */
+    height: 800px; /* Højden af collage-området, justeret for at give plads til alle billeder */
+    margin-left: auto; /* Flytter collage til højre side */
+  }
+
+  .pic-container {
+    position: absolute;
+    width: 150px; /* Ensartet bredde for alle billeder */
+    height: auto;
+  }
+  .pic {
+    width: 300px;
+    height: auto;
+  }
+  .pic1 {
+    top: 0;
+    left: 50px;
+    transform: rotate(-8deg);
+  }
+
+  .pic2 {
+    top: 50px;
+    left: 320px;
+    transform: rotate(2deg);
+  }
+
+  .pic3 {
+    top: 0;
+    left: 600px;
+    transform: rotate(-5deg);
+  }
+</style>

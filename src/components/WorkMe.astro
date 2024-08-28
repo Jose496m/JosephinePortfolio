@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+import pic1 from "../assets/images/vietnam.png";
+import Collage from "./Collage.astro";
+import Collage2 from "./Collage2.astro";
+---
+
+<section class="flex">
+  <div>
+    <Collage2 />
+  </div>
+
+  <div>
+    <h1>AS A COLLEAGUE, I AM</h1>
+  </div>
+  <div>
+    <p>
+      As a colleague, I am known for my loyalty and positive attitude. I always
+      arrive at work with a smile and a desire to learn and grow. <br />
+      <br />I highly value a good work environment and make an effort to
+      contribute to the positive atmosphere within the team. With my open and
+      approachable nature, I am always ready to support my colleagues, whether
+      it involves offering advice, helping with tasks, or simply sharing a good
+      laugh during lunch breaks. <br />
+      <br />
+      Collaboration and teamwork are important values to me, and I take pride in
+      being a reliable and helpful colleague who is always ready to take responsibility.
+    </p>
+  </div>
+</section>
+
+<style>
+  @font-face {
+    font-family: fahkwangRegular;
+    src: url("/fonts/Fahkwang-Regular.ttf");
+  }
+  @font-face {
+    font-family: PlayfairdisplayBold;
+    src: url("/fonts/PlayfairDisplay-Bold.ttf");
+  }
+  @font-face {
+    font-family: PlayfairdisplayRegular;
+    src: url("/fonts/PlayfairDisplay-Regular.ttf");
+  }
+  @font-face {
+    font-family: ZapfHumanist;
+    src: url("/fonts/ZapfHumanist601Regular.ttf");
+  }
+  @font-face {
+    font-family: fahkwangMedium;
+    src: url("/fonts/Fahkwang-Medium.ttf");
+  }
+  @media (min-width: 1025px) {
+    h1 {
+      font-family: PlayfairdisplayRegular;
+      font-size: 30px;
+      margin-left: 70px;
+      margin-bottom: 20px;
+      margin-top: -200px;
+    }
+    h2 {
+      font-family: PlayfairdisplayRegular;
+      font-size: 20px;
+    }
+    .flex {
+      display: flex;
+    }
+    p {
+      width: 430px;
+      line-height: 20px;
+      margin-left: 70px;
+      margin-bottom: 100px;
+    }
+  }
+</style>
